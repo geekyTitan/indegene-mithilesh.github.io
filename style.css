@@ -64,7 +64,7 @@ header .main .logo img{
 
 
 .events{
-    background:url("./bg.png");
+    background:url("images/bg.png");
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -143,6 +143,10 @@ header .main .logo img{
 }
 .services .s-list .sub-lists .sub-lists-logo img{
     border-radius: 50%;
+    background-color: #e9a3a6;
+    width:100px;
+    height: 100px;
+
 }
 .services .s-list .sub-lists .sub-lists-text p:first-child{
     text-align: right;
@@ -175,26 +179,36 @@ font-style: italic;
 }
 
 .testimony{
+    background: url("./images/asphalt-1867667_1920.png") center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:40px;
-    background-color:lightgray;
+    color:white;
+    text-align: center;
+    
+   
 }
 .testimony .t-heading{
     font-size: 25px;
     margin-bottom: 40px;
+    color:white;
 }
 
 .testimony .t-body{
     display: flex;
     flex-direction: row;
+    align-items: center;
     max-width: 70%;
     padding: 50px;
+    justify-content: center
 }
 .testimony .t-body .t-person{
     padding:20px;
+}
+.testimony .t-body .t-person:nth-child(odd){
+    color:rgb(133, 128, 128);
 }
 .testimony .t-body .t-person .avatar{
     margin-bottom: 20px;;
@@ -293,17 +307,19 @@ font-style: italic;
 
 .foot .f-subscribe{
     padding:20px 0;
+
 }
 .foot .f-subscribe input{
     padding:13px;
     font-size: 20px;
     width:400px;
-    margin-right: 0;
+    display: inline-block;
 }
 .foot .f-subscribe a{
-    top:-20px;
+    display:inline-block;
+    position: relative;
     padding:20px 40px;
-    margin-left: 0;
+ 
     text-decoration: none;
     background-color: #c7b199;
     color:white;
